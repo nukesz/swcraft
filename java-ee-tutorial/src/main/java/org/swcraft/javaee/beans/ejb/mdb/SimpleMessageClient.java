@@ -1,20 +1,19 @@
 package org.swcraft.javaee.beans.ejb.mdb;
 
 
-import javax.jms.ConnectionFactory;
-import javax.jms.Queue;
-import javax.jms.Connection;
-import javax.jms.Session;
-import javax.jms.MessageProducer;
-import javax.jms.TextMessage;
-
-import org.swcraft.javaee.beans.ejb.services.IncrementerServiceBean;
-
-import javax.jms.JMSException;
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.ejb.Schedule;
 import javax.ejb.Stateless;
+import javax.jms.Connection;
+import javax.jms.ConnectionFactory;
+import javax.jms.JMSException;
+import javax.jms.MessageProducer;
+import javax.jms.Queue;
+import javax.jms.Session;
+import javax.jms.TextMessage;
+
+import org.swcraft.javaee.beans.ejb.services.IncrementerServiceBean;
 
 @Stateless
 public class SimpleMessageClient {
@@ -26,7 +25,7 @@ public class SimpleMessageClient {
     @EJB
     IncrementerServiceBean service;
     
-    @Schedule(second="*", minute="*", hour="*")
+    @Schedule(minute="*", hour="*")
     public void sendMessage() throws JMSException {
         try (Connection connection = connectionFactory.createConnection()){
         	Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
