@@ -12,15 +12,14 @@ import org.swcraft.javaee.beans.pojo.services.Cache;
 @WebServlet("/firstcontainer")
 public class FirstContainerServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
-	
-	private final Cache cache = Cache.getInstance();
-	
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
-		cache.add("first");
+    private static final long serialVersionUID = 1L;
+
+    private final Cache cache = Cache.getInstance();
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        cache.add("first");
         response.getWriter().println(cache.getData());
     }
-	
+
 }

@@ -5,7 +5,7 @@ import javax.ejb.Stateless;
 @Stateless
 public class NoInterfaceBean {
 
-	public String getMessage() {
-		return "no-interface";
-	}
+    public String getMessage() {
+        return "no-interface";
+    }
 }

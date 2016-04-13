@@ -5,11 +5,10 @@ import javax.ejb.Stateful;
 @Stateful
 public class IncrementerServiceBean {
 
-	private int startIndex = 0;
+    private int startIndex = 0;
 
-	public int getNext() {
-		return ++startIndex;
-	}
-	
-	
+    public int getNext() {
+        return ++startIndex;
+    }
+
 }

@@ -13,15 +13,14 @@ import org.swcraft.javaee.beans.ejb.services.HelloServiceBean;
 @WebServlet("/helloEJB")
 public class WelcomeServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
-	
-	@EJB
-	HelloServiceBean service;
-	
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
+    private static final long serialVersionUID = 1L;
+
+    @EJB
+    HelloServiceBean service;
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().println(service.sayHello());
     }
-	
+
 }

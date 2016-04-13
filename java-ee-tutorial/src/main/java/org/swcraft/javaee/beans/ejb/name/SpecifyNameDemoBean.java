@@ -9,16 +9,16 @@ import javax.ws.rs.Path;
 @Path("viewname")
 public class SpecifyNameDemoBean {
 
-	@EJB(beanName = "FirstBean")
-	LocalInterface bean;
-	
-	// Not allowed:
-	// 
-	// @EJB
-	// LocalInterface bean;
-	
-	@GET
-	public String get() {
-		return bean.getMessage();
-	}
+    @EJB(beanName = "FirstBean")
+    LocalInterface bean;
+
+    // Not allowed:
+    //
+    // @EJB
+    // LocalInterface bean;
+
+    @GET
+    public String get() {
+        return bean.getMessage();
+    }
 }

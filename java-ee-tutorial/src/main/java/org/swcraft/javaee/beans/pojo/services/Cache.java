@@ -4,25 +4,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cache {
-	
-	private List<String> data = new ArrayList<>();
-	
-	private Cache() {
-	}
 
-	private static class CacheHolder {
-		private static final Cache INSTANCE = new Cache();
-	}
+    private List<String> data = new ArrayList<>();
 
-	public static Cache getInstance() {
-		return CacheHolder.INSTANCE;
-	}
-	
-	public void add(String value) {
-		data.add(value);
-	}
-	
-	public List<String> getData() {
-		return data;
-	}
+    private Cache() {
+    }
+
+    private static class CacheHolder {
+        private static final Cache INSTANCE = new Cache();
+    }
+
+    public static Cache getInstance() {
+        return CacheHolder.INSTANCE;
+    }
+
+    public void add(String value) {
+        data.add(value);
+    }
+
+    public List<String> getData() {
+        return data;
+    }
 }

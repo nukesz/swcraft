@@ -4,7 +4,7 @@ import javax.ejb.Local;
 
 @Local
 public interface ExampleLocal {
-	
-	String localMethod();
-	
+
+    String localMethod();
+
 }

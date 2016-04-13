@@ -13,16 +13,15 @@ import org.swcraft.javaee.beans.ejb.services.CacheBean;
 @WebServlet("/secondcontainerEJB")
 public class SecondContainerServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
-	
-	@EJB
-	CacheBean cache;
-	
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
-		cache.add("second");
+    private static final long serialVersionUID = 1L;
+
+    @EJB
+    CacheBean cache;
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        cache.add("second");
         response.getWriter().println(cache.getData());
     }
-	
+
 }

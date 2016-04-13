@@ -12,14 +12,13 @@ import org.swcraft.javaee.beans.pojo.services.HelloService;
 @WebServlet("/hello")
 public class WelcomeServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
-	
-	private final HelloService service = new HelloService();
-	
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
+    private static final long serialVersionUID = 1L;
+
+    private final HelloService service = new HelloService();
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().println(service.sayHello());
     }
-	
+
 }

@@ -1,6 +1,5 @@
 package org.swcraft.javaee.beans.ejb.mdb;
 
-
 import javax.annotation.Resource;
 import javax.ejb.EJB;
 import javax.ejb.Schedule;
@@ -21,20 +20,20 @@ public class SimpleMessageClient {
     private ConnectionFactory connectionFactory;
     @Resource(mappedName = "jms/Queue")
     private Queue queue;
-    
+
     @EJB
     IncrementerServiceBean service;
-    
-    @Schedule(minute="*", hour="*")
+
+    @Schedule(minute = "*", hour = "*")
     public void sendMessage() throws JMSException {
-        try (Connection connection = connectionFactory.createConnection()){
-        	Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+        try (Connection connection = connectionFactory.createConnection()) {
+            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             MessageProducer messageProducer = session.createProducer(queue);
             TextMessage message = session.createTextMessage();
 
-			message.setText("This is the message: " + service.getNext());
-			System.out.println("Sending message: " + message.getText());
-			messageProducer.send(message);
+            message.setText("This is the message: " + service.getNext());
+            System.out.println("Sending message: " + message.getText());
+            messageProducer.send(message);
         }
-    } 
-} 
+    }
+}

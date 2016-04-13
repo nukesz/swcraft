@@ -4,12 +4,11 @@ import javax.ejb.Stateless;
 
 @Stateless
 public class HelloServiceBean {
-	
-	private final String message = "Hello world!";
 
-	public String sayHello() {
-		return message;
-	}
+    private final String message = "Hello world!";
+
+    public String sayHello() {
+        return message;
+    }
 
 }
-

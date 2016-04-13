@@ -5,9 +5,9 @@ import javax.ejb.Stateless;
 @Stateless
 public class RemoteBean implements ExampleRemote {
 
-	@Override
-	public String remoteMethod() {
-		return "remote";
-	}
+    @Override
+    public String remoteMethod() {
+        return "remote";
+    }
 
 }

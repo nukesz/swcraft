@@ -9,14 +9,14 @@ import org.swcraft.javaee.beans.ejb.services.IncrementerServiceBean;
 @Stateful
 public class ShopBean {
 
-	@EJB
-	private IncrementerServiceBean incrementerService;
-	
-	@EJB
-	private HelloServiceBean helloService;
+    @EJB
+    private IncrementerServiceBean incrementerService;
 
-	public void enter() {
-		System.out.println("Visitors today: " + incrementerService.getNext());
-		System.out.println(helloService.sayHello());
-	}
+    @EJB
+    private HelloServiceBean helloService;
+
+    public void enter() {
+        System.out.println("Visitors today: " + incrementerService.getNext());
+        System.out.println(helloService.sayHello());
+    }
 }

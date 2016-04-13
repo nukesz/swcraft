@@ -5,6 +5,6 @@ import javax.ejb.Remote;
 @Remote
 public interface ExampleRemote {
 
-	String remoteMethod();
-	
+    String remoteMethod();
+
 }

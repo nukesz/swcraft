@@ -4,6 +4,6 @@ import javax.ejb.Local;
 
 @Local
 public interface LocalInterface {
-	
-	String getMessage();
+
+    String getMessage();
 }

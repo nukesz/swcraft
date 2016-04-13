@@ -12,18 +12,17 @@ import org.swcraft.javaee.beans.pojo.services.IncrementerService;
 @WebServlet("/acc")
 public class AccumulatorServlet extends HttpServlet {
 
-	private static final long serialVersionUID = 1L;
-	
-	private final IncrementerService incrementerService;
-	
-	public AccumulatorServlet() {
-		incrementerService = new IncrementerService();
-	}
-	
-	@Override
-	public void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws IOException {
+    private static final long serialVersionUID = 1L;
+
+    private final IncrementerService incrementerService;
+
+    public AccumulatorServlet() {
+        incrementerService = new IncrementerService();
+    }
+
+    @Override
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.getWriter().println(incrementerService.getNext());
     }
-	
+
 }

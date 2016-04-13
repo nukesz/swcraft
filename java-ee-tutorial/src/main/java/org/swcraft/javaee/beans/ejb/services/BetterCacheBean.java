@@ -12,16 +12,16 @@ import javax.ejb.Singleton;
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER) // Default
 @Singleton
 public class BetterCacheBean {
-	
-	private List<String> data = new ArrayList<>();
-	
-	@Lock(LockType.WRITE)
-	public void add(String value) {
-		data.add(value);
-	}
-	
-	@Lock(LockType.READ)
-	public List<String> getData() {
-		return data;
-	}
+
+    private List<String> data = new ArrayList<>();
+
+    @Lock(LockType.WRITE)
+    public void add(String value) {
+        data.add(value);
+    }
+
+    @Lock(LockType.READ)
+    public List<String> getData() {
+        return data;
+    }
 }

@@ -5,9 +5,9 @@ import javax.ejb.Stateless;
 @Stateless
 public class LocalBean implements ExampleLocal {
 
-	@Override
-	public String localMethod() {
-		return "local";
-	}
+    @Override
+    public String localMethod() {
+        return "local";
+    }
 
 }
