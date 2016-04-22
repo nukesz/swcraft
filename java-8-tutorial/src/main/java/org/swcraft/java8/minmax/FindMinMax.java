@@ -3,6 +3,7 @@ package org.swcraft.java8.minmax;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 import org.swcraft.java8.data.Movie;
 
@@ -42,5 +43,11 @@ public class FindMinMax {
         
         Movie earliestMovieWithMin = movies.stream().min(Comparator.comparing(movie -> movie.getDuration())).get();
         System.out.println(earliestMovieWithMin);
+        
+        // What about empty list? No more NullPointerException!
+        List<Movie> emptyMovies = new ArrayList<>();
+        Optional<Movie> maybe = emptyMovies.stream().min(Comparator.comparing(movie -> movie.getDuration()));
+        System.out.println(maybe.isPresent());
+        System.out.println(maybe.get());
     }
 }
