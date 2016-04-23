@@ -6,20 +6,13 @@ import java.util.List;
 import java.util.Optional;
 
 import org.swcraft.java8.data.Movie;
+import org.swcraft.java8.data.SampleData;
 
 public class FindMinMax {
     
     public static void main(String[] args) {
-        List<Movie> movies = new ArrayList<>();
-        movies.add(new Movie("Star Wars: Episode I - The Phantom Menace", 136, 1999));
-        movies.add(new Movie("Star Wars: Episode II - Attack of the Clones", 142, 2002));
-        movies.add(new Movie("Star Wars: Episode III - Revenge of the Sith", 140, 2005));
-        movies.add(new Movie("Star Wars: Episode IV - A New Hope", 121, 1977));
-        movies.add(new Movie("Star Wars: Episode V - The Empire Strikes Back", 124, 1980));
-        movies.add(new Movie("Star Wars: Episode VI - Return of the Jedi", 131, 1983));
-        movies.add(new Movie("Star Wars: Episode VII - The Force Awakens", 136, 2015));
-        
         // Find the longest movie, before java 8..
+        List<Movie> movies = new ArrayList<Movie>(SampleData.starWarsMovies);
         Movie longestMovie = movies.isEmpty() ? null : movies.get(0); // To avoid exceptions if the list is empty..
         for (Movie movie : movies) {
             if (movie.getDuration() > longestMovie.getDuration()) {
