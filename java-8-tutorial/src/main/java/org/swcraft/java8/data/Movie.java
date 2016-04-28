@@ -1,10 +1,11 @@
 package org.swcraft.java8.data;
 
 public class Movie {
-    private String title;
-    private int duration;
-    private int releaseYear;
-    
+
+    private final String title;
+    private final int duration;
+    private final int releaseYear;
+
     public Movie(String title, int duration, int releaseYear) {
         this.title = title;
         this.duration = duration;
@@ -27,6 +28,5 @@ public class Movie {
     public String toString() {
         return "Movie [title=" + title + ", duration=" + duration + ", releaseYear=" + releaseYear + "]";
     }
-    
-    
+
 }
