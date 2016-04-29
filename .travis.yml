@@ -1,5 +1,6 @@
 language: java
-
+jdk:
+  - oraclejdk8
 env:
   - PROJECT_DIR=java-8-tutorial
   - PROJECT_DIR=java-ee-tutorial
