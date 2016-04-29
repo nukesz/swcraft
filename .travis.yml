@@ -1,0 +1,6 @@
+language: java
+
+env:
+  - PROJECT_DIR=java-8-tutorial
+  - PROJECT_DIR=java-ee-tutorial
+script: cd $PROJECT_DIR && mvn clean install
