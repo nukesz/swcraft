@@ -9,7 +9,7 @@ import java.util.List;
 
 import org.junit.Test;
 
-public class TestBulkOperations {
+public class BulkOperationsTest {
 
 	@Test
 	public void testContainsAll() throws Exception {
