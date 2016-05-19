@@ -10,6 +10,7 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.junit.Test;
 
@@ -43,7 +44,7 @@ public class SetImplementationsTest {
 	
 	@Test
 	public void testOrderOfThreeSet() throws Exception {
-		Set<Integer> treeSet = new HashSet<>();
+		Set<Integer> treeSet = new TreeSet<>();
 		treeSet.add(4);
 		treeSet.add(2);
 		treeSet.add(1);
