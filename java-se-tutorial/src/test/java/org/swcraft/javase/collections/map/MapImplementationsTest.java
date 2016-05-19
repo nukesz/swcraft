@@ -1,4 +1,4 @@
-package org.swcraft.javase.collections.set;
+package org.swcraft.javase.collections.map;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
