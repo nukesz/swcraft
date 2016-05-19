@@ -21,7 +21,7 @@ public class CollectionPrinter {
 	}
 	
 	public void printWithStream(Collection<?> collection) {
-		collection.forEach(x -> System.out.println(x));
+		collection.stream().forEach(x -> System.out.println(x));
 	}
 	
 	public static void main(String[] args) {
