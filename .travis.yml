@@ -6,4 +6,5 @@ env:
   - PROJECT_DIR=java-ee-tutorial
   - PROJECT_DIR=java-se-tutorial
   - PROJECT_DIR=testing
+  - PROJECT_DIR=spring-framework
 script: cd $PROJECT_DIR && mvn clean install
