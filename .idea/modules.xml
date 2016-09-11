@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-8-tutorial/java-8-tutorial.iml" filepath="$PROJECT_DIR$/java-8-tutorial/java-8-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-ee-tutorial/java-ee-tutorial.iml" filepath="$PROJECT_DIR$/java-ee-tutorial/java-ee-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-se-tutorial/java-se-tutorial.iml" filepath="$PROJECT_DIR$/java-se-tutorial/java-se-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-core.iml" filepath="$PROJECT_DIR$/spring-framework/spring-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework-core/spring-framework-core.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework-core/spring-framework-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-framework/spring-framework-mvc/spring-framework-mvc.iml" filepath="$PROJECT_DIR$/spring-framework/spring-framework-mvc/spring-framework-mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testing/testing.iml" filepath="$PROJECT_DIR$/testing/testing.iml" />
+    </modules>
+  </component>
+</project>
