@@ -27,6 +27,7 @@
         <module name="java-se-tutorial" />
         <module name="spring-framework-core" />
         <module name="spring-framework-mvc" />
+        <module name="testing" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

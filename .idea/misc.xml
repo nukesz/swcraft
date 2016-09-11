@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/java-8-tutorial/pom.xml" />
         <option value="$PROJECT_DIR$/java-ee-tutorial/pom.xml" />
         <option value="$PROJECT_DIR$/java-se-tutorial/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-framework/pom.xml" />
       </list>
     </option>
   </component>
