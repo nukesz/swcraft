@@ -9,7 +9,7 @@ public class PresenterSpy implements Presenter {
         this.response = response;
     }
 
-    public LoginResponse getLogoutRequest() {
+    public LoginResponse getLoginResponse() {
         return response;
     }
 }

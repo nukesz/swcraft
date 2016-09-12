@@ -57,8 +57,8 @@ public class UserControllerWithMockitoTest {
 
         controller.login(request);
 
-        assertThat(presenter.getLogoutRequest().isValid(), is(true));
-        assertThat(presenter.getLogoutRequest().getMessage(), is(UserController.ACCEPT_MESSAGE));
+        assertThat(presenter.getLoginResponse().isValid(), is(true));
+        assertThat(presenter.getLoginResponse().getMessage(), is(UserController.ACCEPT_MESSAGE));
     }
 
     @Test
@@ -70,7 +70,7 @@ public class UserControllerWithMockitoTest {
 
         controller.login(request);
 
-        assertThat(presenter.getLogoutRequest().isValid(), is(true));
+        assertThat(presenter.getLoginResponse().isValid(), is(true));
     }
 
     @Test
@@ -82,7 +82,7 @@ public class UserControllerWithMockitoTest {
 
         controller.login(request);
 
-        assertThat(presenter.getLogoutRequest().isValid(), is(false));
+        assertThat(presenter.getLoginResponse().isValid(), is(false));
     }
 
     @Test
