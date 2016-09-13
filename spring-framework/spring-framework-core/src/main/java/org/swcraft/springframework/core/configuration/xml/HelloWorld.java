@@ -1,6 +1,7 @@
-package org.swcraft.springframework.core;
+package org.swcraft.springframework.core.configuration.xml;
 
 public class HelloWorld {
+
     private String message;
 
     public void setMessage(String message) {
