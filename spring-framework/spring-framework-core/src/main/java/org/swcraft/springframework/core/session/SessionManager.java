@@ -1,4 +1,4 @@
-package org.swcraft.springframework.core.aop.session;
+package org.swcraft.springframework.core.session;
 
 import java.util.ArrayList;
 import java.util.List;
