@@ -1,9 +1,9 @@
 package org.swcraft.springframework.core.knight;
 
+import java.io.PrintStream;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.io.PrintStream;
 
 @Configuration
 public class KnightConfig {

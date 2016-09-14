@@ -4,12 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="helloWorld" class="org.swcraft.springframework.core.configuration.xml.HelloWorld">
-        <property name="message" value="Hello World!"/>
-    </bean>
-
-
-    <bean id="movieFinder" class="org.swcraft.springframework.core.configuration.xml.MovieFinder" init-method="init" destroy-method="destroy"/>
+    <bean id="movieFinder" class="org.swcraft.springframework.core.configuration.xml.OldMovieFinder" init-method="init" destroy-method="destroy"/>
 
     <bean id="simpleMovieLister" class="org.swcraft.springframework.core.configuration.xml.SimpleMovieLister">
         <constructor-arg ref="movieFinder"/>

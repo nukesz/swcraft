@@ -6,24 +6,23 @@ import java.util.List;
 
 public class MovieFinder {
 
-    private List<Movie> movies = new ArrayList<>();
+	private List<Movie> movies = new ArrayList<>();
 
-    public MovieFinder() {
-        System.out.println("Calling constructor");
-    }
+	public MovieFinder() {
+		System.out.println("Calling constructor");
+	}
 
-    public void init() {
-        System.out.println("Initializing MovieFinder class");
-        movies.addAll(Arrays.asList(new Movie("The Godfather"), new Movie("The Dark Knight "),
-                new Movie("Pulp Fiction")));
-    }
+	public void init() {
+		System.out.println("Initializing MovieFinder class");
+		movies.addAll(
+				Arrays.asList(new Movie("The Godfather"), new Movie("The Dark Knight "), new Movie("Pulp Fiction")));
+	}
 
-    public void destroy() {
-        System.out.println("Closing MovieFinder class");
-    }
+	public void destroy() {
+		System.out.println("Closing MovieFinder class");
+	}
 
-
-    public List<Movie> findAll() {
-        return movies;
-    }
+	public List<Movie> findAll() {
+		return movies;
+	}
 }
