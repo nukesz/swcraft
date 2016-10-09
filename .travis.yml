@@ -7,4 +7,5 @@ env:
   - PROJECT_DIR=java-se-tutorial
   - PROJECT_DIR=testing
   - PROJECT_DIR=spring-framework
+  - PROJECT_DIR=spring-boot-readinglist
 script: cd $PROJECT_DIR && mvn clean install
