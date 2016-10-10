@@ -14,16 +14,11 @@ public class SpringBootReadinglistApplication {
 
 	@Bean
 	public CommandLineRunner setup(ReadingListRepository repository) {
-		return new CommandLineRunner() {
-
-			@Override
-			public void run(String... arg0) throws Exception {
-				System.out.println("Adding some books to the DB");
-				repository.save(new Book("Harry Potter and the Order of the Phoenix", "Suzanne Collins ", 452323));
-				repository.save(new Book("The Hunger Games", "J.K. Rowling", 123453));
-			}
+		return args -> {
+			System.out.println("Adding some books to the DB");
+			repository.save(new Book("Harry Potter and the Order of the Phoenix", "Suzanne Collins ", 452323));
+			repository.save(new Book("The Hunger Games", "J.K. Rowling", 123453));
 		};
-
 	}
 
 }
