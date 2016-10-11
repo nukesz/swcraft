@@ -7,17 +7,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class CustomHealthIndicator implements HealthIndicator {
 
+	private boolean up = true;
+
 	@Override
 	public Health health() {
-		int errorCode = check(); // perform some specific health check
-		if (errorCode != 0) {
-			return Health.down().withDetail("Error Code", errorCode).build();
+		if (!up) {
+			return Health.down().withDetail("Error Code", "Server is marked as down").build();
 		}
-		return Health.up().build();
+		return Health.up().withDetail("system", "fully functioning").build();
 	}
 
-	private int check() {
-		return 1;
+	public void makeItDown() {
+		up = false;
 	}
 
 }
